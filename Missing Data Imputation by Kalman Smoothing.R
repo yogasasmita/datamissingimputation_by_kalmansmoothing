@@ -24,7 +24,7 @@ rm(list=ls())  # remove variables
 graphics.off() # close figures
 
 # Membaca data dari file Excel
-IBS <- read_excel("E:/@Yoga Sasmita - ITS/Disertasi/Pengolahan/ARIMAX/ForecastIBS.xlsx")
+IBS <- read_excel("E:/@Yoga Sasmita - ITS/Disertasi/Pengolahan/Missing Data Imputation by Kalman Smoothing/ForecastExport.xlsx")
 data <- IBS[1:57, 11:13]  # Assumes columns 11-13 contain relevant data
 data <- as.matrix(sapply(data, as.numeric))
 
